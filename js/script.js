@@ -63,7 +63,13 @@ console.log(sendBtnElem);
 
 sendBtnElem.addEventListener("click", function(){
     // test
-    console.log("CLICK");
+    // console.log("CLICK");
+
+    const ageInputElem = document.getElementById("age"); //object
+    console.log(ageInputElem);
+
+    const ageValue = parseInt(ageInputElem.value);
+    console.log(ageValue, typeof ageValue);
 })
 
 
