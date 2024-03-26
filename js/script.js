@@ -1,38 +1,38 @@
 
 
 // Chiedi all'utente la sua età
-let userAge = prompt("Salve, prego inserisca la sua età!");
-userAge = parseInt(userAge);
-let resultAge = "La sua età è " + userAge;
-console.log(userAge, typeof userAge);
+// let userAge = promt("Salve, prego inserisca la sua età!");
+// userAge = parseInt(userAge);
+// let resultAge = "La sua età è " + userAge;
+// console.log(userAge, typeof userAge);
 
 
 
 
-// Chiedi quanti km deve fare l'utente 
-let userDistance = prompt("Quanti km devi fare?");
-userDistance = parseInt(userDistance);
-console.log(userDistance, typeof userDistance);
+// // Chiedi quanti km deve fare l'utente 
+// let userDistance = prompt("Quanti km devi fare?");
+// userDistance = parseInt(userDistance);
+// console.log(userDistance, typeof userDistance);
 
-// Prezzo da pagare
-const standardPrice = 0.21 * userDistance;
-console.log(standardPrice);
-let finalPrice = standardPrice;
+// // Prezzo da pagare
+// const standardPrice = 0.21 * userDistance;
+// console.log(standardPrice);
+// let finalPrice = standardPrice;
 
-if (userAge < 18) {
-    finalPrice = standardPrice * 0.80;
-    resultAge = "Avendo " + userAge + " anni, può avere lo sconto del 20%";
-} else if (userAge > 65) {
-    finalPrice = standardPrice * 0.60;
-    resultAge = "Avendo " + userAge + " anni, può avere lo sconto del 40%";
-} else {
-    finalPrice = standardPrice;
-    resultAge ="Avendo " + userAge + " anni, non ti verrà applicato nessuno sconto"
-}
+// if (userAge < 18) {
+//     finalPrice = standardPrice * 0.80;
+//     resultAge = "Avendo " + userAge + " anni, può avere lo sconto del 20%";
+// } else if (userAge > 65) {
+//     finalPrice = standardPrice * 0.60;
+//     resultAge = "Avendo " + userAge + " anni, può avere lo sconto del 40%";
+// } else {
+//     finalPrice = standardPrice;
+//     resultAge ="Avendo " + userAge + " anni, non ti verrà applicato nessuno sconto"
+// }
 
-console.log(resultAge);
-document.getElementById("finalprice").innerHTML = "Pagamento: " + (finalPrice)+"€";
-document.getElementById("condition").innerHTML = (resultAge);
+// console.log(resultAge);
+// document.getElementById("finalprice").innerHTML = "Pagamento: " + (finalPrice)+"€";
+// document.getElementById("condition").innerHTML = (resultAge);
 
 // const youngPrice = Math.floor((0.21 * userDistance) * 0.20);
 // console.log(youngPrice);
@@ -57,6 +57,14 @@ document.getElementById("condition").innerHTML = (resultAge);
 // }
 
 
+const sendBtnElem = document.getElementById("send-btn");
+console.log(sendBtnElem);
+
+
+sendBtnElem.addEventListener("click", function(){
+    // test
+    console.log("CLICK");
+})
 
 
 
